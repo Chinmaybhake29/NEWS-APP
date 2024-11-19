@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* define color variables for primary and secondary text colors */
+  --primary-text-color: #023e8a;
+  --secondary-text-color: #0077b6;
+}
+
+body {
+  /* primary background color for the body*/
+  font-family: Poppins, sans-serif;
+  color: var(--primary-text-color);
+  background-color: #caf0f8;
+}
+
+p {
+  /*secondary text color for paragraphs*/
+  font-family: Roboto, sans-serif;
+  color: var(--secondary-text-color);
+}
+
+.top-nav {
+  background-color: #48cae4;
+}
+
+.menus {
+  /*Menu bar adjusted to the center*/
+  width: 100%;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-link {
+  /* menu links adjusted to the center and have a hover effect */
+  color: var(--primary-text-color) !important;
+}
+
+.nav-link:hover {
+  /* hover effect for active menu links */
+  color: var(--secondary-text-color) !important;
+}
+
+.nav-link:active {
+  /* active menu link */
+  color: #fb5607 !important;
+}
+
+.card {
+  box-shadow: 0 0 10px #01385f;
+  min-height: 400px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.card:hover {
+  /* Hover effect for cards */
+  box-shadow: 0 0 10px #403d39;
+  background-color: #acdfe9;
+  transform: translateY(-10px);
+}
+
+.card-body > h4,
+h6 {
+  color: var(--primary-text-color);
+}
